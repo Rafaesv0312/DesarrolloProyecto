@@ -1,0 +1,143 @@
+
+Algoritmo Inversión
+    {
+   Definir in, tasa , ms como Real;
+   Definir a como Entero;
+ 
+   (tasa = 0.06; // Tasa de interés anual del 6%)
+a=349;// cantidad de años que transcurrio
+ 
+    Imprimir "Ingrese el monto de la inversión inicial (en dólares): ";
+    Leer (in);
+           ms=(ci*ts*a+ci );
+    
+    Imprimir "El valor de la inversión en el año 1976 sería de $", ms ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo Fibonacci
+{
+Entero x,n;
+Real a,b,c;
+a=0
+b=1
+x = 1
+Imprimir ("ingresé la cantidad de términos que quiere saber");
+Leer (n);
+Mientras (x <= n) Hacer
+{
+c = a+b;
+a = b;
+b = c;
+x = x+1;
+}//Fin mientras 
+}//Fin para 
+}//Fin Algoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo Mayor_menor
+Entero ,a,b,x;
+x = 1;
+Mientras (x<=10) Hacer
+Imprimir ("ingrese un numero");
+Leer (n);
+Si (x == 1) Entonces{
+a = n;
+b = n;
+}
+Si (n >a)Entonces{
+a = n;
+}
+Si (n < b) Entonces{
+b = n;
+}
+}//Fin Algoritmo
+	
+
+
+
+
+
+
+
+
+
+
+
+
+Algoritmo PiedraPapelTijera
+Definir participante1, participante2, participante3, opcion1, opcion2, opcion3, ronda Como Entero;
+Definir puntuacion1, puntuacion2, puntuacion3 Como Entero;
+Definir opcionesValidas Como Cadena;
+ 
+ 
+puntuacion1 <- 0;
+puntuacion2 <- 0;
+puntuacion3 <- 0;
+ 
+Para ronda <- 1 Hasta 3 Hacer
+    Escribir "=== Ronda ", ronda, " ===";
+ 
+    Escribir "Turno de participante 1:";
+    Escribir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+    Leer opcion1;
+ 
+    Escribir "Turno de participante 2:";
+    Escribir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+    Leer opcion2;
+ 
+    Escribir "Turno de participante 3:";
+    Escribir "Elija una opción (1: Piedra, 2: Papel, 3: Tijera):";
+    Leer opcion3;
+ 
+    Si opcion1 = opcion2 Y opcion2 = opcion3 Entonces
+        Escribir "Empate en la ronda ", ronda;
+    Sino
+        Si (opcion1 = 1 Y opcion2 = 3) o(opcion1 = 2 Y opcion2 = 1) o(opcion1 = 3 Y opcion2 = 2) Entonces
+            Escribir "Participante 1 gana la ronda ", ronda;
+            puntuacion1 <- puntuacion1 + 1;
+        Sino
+            Si (opcion2 = 1 Y opcion3 = 3) o(opcion2 = 2 Y opcion3 = 1) O (opcion2 = 3 Y opcion3 = 2) Entonces
+                Escribir "Participante 2 gana la ronda ", ronda;
+                puntuacion2 <- puntuacion2 + 1
+            Sino
+                Si (opcion1 = 1 Y opcion3 = 3) o (opcion1 = 2 Y opcion3 = 1) o (opcion1 = 3 Y opcion3 = 2) o(opcion1== 2 & opcion2== 2) Entonces
+                    Escribir "Participante 3 gana la ronda ", ronda;
+                    puntuacion3 <- puntuacion3 + 1;
+                Sino
+                    si opcion1>3 o opcion2>3 o opcion3>3 entonces 
+                        Escribir "ronda no valida";
+ 
+                    FinSi
+                Fin Si
+            Fin Si
+        Fin Si
